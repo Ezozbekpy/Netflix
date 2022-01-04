@@ -6,8 +6,6 @@ jobs:
   run-tests:
     runs-on: ubuntu-latest
 
-    env:
-      DJANGO_SETTINGS_MODULE: Netflix.settings
       
     steps:
       - uses: actions/checkout@v2
