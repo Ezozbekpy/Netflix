@@ -16,4 +16,4 @@ class Movie(models.Model):
     year = models.DateField(blank=False, null=False)
     imdb = models.IntegerField(default=1, blank=False, null=False)
     genree = models.CharField(max_length=180, choices=GENRES)
-    actors = models.ManyToManyField(Actor, related_name='movie')
+    actors = models.ManyToManyField(Actor, related_name='movie', blank=True, null=True)
