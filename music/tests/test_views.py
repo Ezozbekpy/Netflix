@@ -12,8 +12,8 @@ django.setup()
 
 class Test_MovieViewSet(TestCase):
     def setUp(self):
-        self.Movie = Movie.objects.create(name='new-5', year='2000-10-02', imdb='5', genree='Comedy', )
         self.Movie = Movie.objects.create(name='new-6', year='2000-10-02', imdb='4', genree='Comedy', )
+        self.Movie = Movie.objects.create(name='new-7', year='2001-10-01', imdb='5 , genree='Comedy', )
         self.client = Client()
         self.Movie_all = Movie.objects.all()
 
